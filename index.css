@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body{
+    color:white;
+    background-color: black;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+main {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+#toolsdiv {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+#activecolor {
+    background-color: red;
+    color: white;
+}
+
+#colortool button {
+    width: 100%;
+    height: 3rem;
+    border: 0.1rem black solid;
+
+}
+
+#sizetool input {
+    width: 100%;
+    height: 3rem;
+}
+
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+#canvas {
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    grid-gap: 0em;
+    grid-template-columns: repeat(var(--grid-cols), 16px);
+    grid-template-rows: repeat(var(--grid-rows), 16px);
+}
+
+.gridItem {
+    padding: 8px;
+    border: 1px solid white;
+    text-align: center;
+}
